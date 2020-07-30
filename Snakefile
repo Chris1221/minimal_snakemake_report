@@ -26,3 +26,6 @@ rule _example_plot:
     plt.title('Tan wave')
     plt.savefig(output.png)
 
+rule clean:
+  shell: "rm -rf tan_function.png example.csv index.html"
+
